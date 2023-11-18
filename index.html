@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Modais com JavaScript Puro</title>
+</head>
+<body>
+    
+    <div class="modais">
+        <div onclick="abrirModal('modal-container')" class="btn">Abrir modal</div>
+        <div id="modal-container" class="modal-container">
+            <div class="modal">
+                <button class="fechar-modal" id="fechar">X</button>
+                <h1>Olá, mundo</h1>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                    Harum soluta, nobis adipisci aperiam molestiae, qui nostrum esse id deserunt aliquam perferendis? 
+                    Ad dolor distinctio accusamus laudantium error similique obcaecati hic.
+                </p>
+            </div>
+        </div>
+
+        <div onclick="abrirModal('modal-container-cadastro')" class="btn">Cadastro</div>
+        <div id="modal-container-cadastro" class="modal-container">
+            <div class="modal-cadastro">
+                <button class="fechar-modal" id="fechar">X</button>
+                
+                <div class="title">
+                    <h1>Cadastro</h1>
+                </div>
+      
+                <div class="input-group">
+                  <div class="input-box">
+                    <label for="name">Nome Completo</label>
+                    <input
+                      id="name"
+                      placeholder="Nome Completo"
+                    />
+                  </div>
+      
+                  <div class="input-box">
+                    <label for="labelEmail">E-mail</label>
+                    <input
+                      id="email"
+                      placeholder="Digite seu e-mail"
+                    />
+                  </div>
+      
+                  <div class="input-box">
+                    <label for="labelNumero">Celular</label>
+                    <input
+                      id="number"
+                      placeholder="(xx) xxxx-xxxx"
+                    />
+                  </div>
+
+                  <div class="input-box">
+                    <label for="password">Senha</label>
+                    <input
+                      id="password"
+                      placeholder="Digite sua senha"
+                    />
+                  </div>
+                </div>
+
+                <div>
+                    <div class="btn-modal">Cadastrar</div>
+                </div>
+                
+            </div>
+        </div>
+
+        <div onclick="abrirModal('modal-container-login')" class="btn">Login</div>
+        <div id="modal-container-login" class="modal-container">
+            <div class="modal-login">
+                <button class="fechar-modal" id="fechar">X</button>
+
+                <div class="title">
+                    <h1>Login</h1>
+                </div>
+      
+                <div class="input-group">
+                  <div class="input-box">
+                    <label for="labelEmail">E-mail</label>
+                    <input
+                      id="email"
+                      placeholder="Digite seu e-mail"
+                    />
+                  </div>
+
+                  <div class="input-box">
+                    <label for="password">Senha</label>
+                    <input
+                      id="password"
+                      placeholder="Digite sua senha"
+                    />
+                  </div>
+
+                  <div class="criar-conta">
+                    Não é Cadastrado? <a href="">Crie uma Conta</a>
+                  </div>
+                </div>
+
+                <div>
+                    <div class="btn-modal">Entrar</div>
+                </div>
+            </div>
+        </div>
+
+        
+    </div>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
